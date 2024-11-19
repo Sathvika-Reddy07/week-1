@@ -1,0 +1,70 @@
+ C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git init
+Reinitialized existing Git repository in C:/Users/Sathvika Reddy/Desktop/DevOps Lab/week-1/.git/
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git add .
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git commit -am "commited by 22H51A05T1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Sathvika Reddy@Sathvika.(none)')
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git config --global user.name "Sathvika-Reddy07"
+>> git config --global user.email "sathvikatheepireddy@gmail.com"
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git config --global user.name
+>> git config --global user.email
+>>
+Sathvika-Reddy07
+sathvikatheepireddy@gmail.com
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git commit -am "committed by 22H51A05T1"
+>>
+[main (root-commit) 4d155b5] committed by 22H51A05T1
+ 2 files changed, 20 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 script.js
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git remote add origin https://github.com/Sathvika-Reddy07/week-1.git
+error: remote origin already exists.
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git remote -v
+>>
+origin  https://github.com/Sathvika-Reddy07/week-1.git (fetch)
+origin  https://github.com/Sathvika-Reddy07/week-1.git (push)
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git remote remove origin
+>>
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git remote add origin https://github.com/Sathvika-Reddy07/week-1.git
+>>
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git remote set-url origin https://github.com/Sathvika-Reddy07/week-1.git
+>>
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git remote -v
+>>
+origin  https://github.com/Sathvika-Reddy07/week-1.git (fetch)
+origin  https://github.com/Sathvika-Reddy07/week-1.git (push)
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Sathvika-Reddy07/week-1.git'
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git branch
+>>
+* main
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git push origin main
+>>
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 859 bytes | 286.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Sathvika-Reddy07/week-1.git
+ * [new branch]      main -> main
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git branch -m master main
+>>
+fatal: no branch named 'master'
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> git push origin main
+>>
+Everything up-to-date
+PS C:\Users\Sathvika Reddy\Desktop\DevOps Lab\week-1> 
